@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Origen del Fundador — VAV</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=IBM+Plex+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--black:#040404;--bg:#080808;--white:#f0ebe0;--off:#9a948a;--off2:#c0bab0;--gold:#c8a84b;--gold-b:#f0c055;--gold-d:#3a2f0e;--gold-m:#7a6020;--border:#141414;}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{background-color:#040404;background:var(--black);color:var(--white);font-family:'Cormorant Garamond',Georgia,serif;overflow-x:hidden;}
+body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E");pointer-events:none;z-index:9999;opacity:.35;}
+a{color:inherit}
+.hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:110px 32px 80px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 55% at 50% 55%, rgba(200,168,75,0.06) 0%, transparent 72%);pointer-events:none;}
+.ghost{position:absolute;top:50%;left:50%;transform:translate(-50%,-46%);font-family:'Bebas Neue',sans-serif;font-size:clamp(160px,32vw,440px);color:rgba(200,168,75,0.018);letter-spacing:-4px;line-height:1;white-space:nowrap;pointer-events:none;}
+.kicker{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:6px;color:var(--gold);text-transform:uppercase;margin-bottom:34px;position:relative;z-index:1;}
+h1{font-family:'Bebas Neue',sans-serif;font-size:clamp(64px,11vw,150px);line-height:.86;letter-spacing:3px;position:relative;z-index:1;}
+em{color:var(--gold);font-style:normal;}
+.sub{font-size:clamp(20px,2vw,31px);line-height:1.55;color:var(--off2);font-style:italic;font-weight:300;max-width:780px;margin-top:38px;position:relative;z-index:1;}
+.drop{width:1px;height:90px;background:linear-gradient(180deg,var(--gold-d),transparent);margin-top:58px;position:relative;z-index:1;}
+.nav{position:fixed;top:22px;left:22px;z-index:1000;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);text-decoration:none;border:1px solid var(--gold-d);padding:10px 14px;background:rgba(4,4,4,.72);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);}
+.nav:hover{border-color:var(--gold);color:var(--gold-b)}
+.s{max-width:1120px;margin:0 auto;padding:110px 48px;}
+.lbl{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:5px;color:var(--gold);text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;gap:14px;}
+.lbl::before{content:'';display:inline-block;width:28px;height:1px;background:var(--gold-d);}
+h2{font-family:'Bebas Neue',sans-serif;font-size:clamp(44px,7vw,92px);line-height:.9;letter-spacing:2px;margin-bottom:36px;}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:78px;align-items:start;}
+.body{font-size:clamp(17px,1.55vw,21px);line-height:1.85;color:var(--off2);font-weight:300;}
+.body p{margin-bottom:22px;}
+.body strong{color:var(--white);font-weight:600;}
+.quote{border-left:2px solid var(--gold-d);padding-left:28px;color:var(--gold-b);font-style:italic;font-size:clamp(22px,2.2vw,34px);line-height:1.45;font-weight:300;position:sticky;top:90px;}
+.micro{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2px;line-height:2;color:var(--gold-m);border-top:1px solid var(--gold-d);margin-top:28px;padding-top:22px;text-transform:uppercase;}
+hr{border:none;border-top:1px solid var(--border)}
+.strip{background:var(--gold);padding:11px 0;overflow:hidden}
+.strip-in{display:flex;white-space:nowrap;animation:ticker 58s linear infinite}
+.si{padding:0 30px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2.5px;color:var(--black);font-weight:500}
+@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border);border:1px solid var(--border);margin-top:56px}
+.card{background:#040404;padding:44px 34px;min-height:250px;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold-d),transparent)}
+.n{font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--gold);letter-spacing:4px;margin-bottom:18px}
+.t{font-family:'Bebas Neue',sans-serif;font-size:clamp(25px,2.5vw,38px);letter-spacing:1.5px;margin-bottom:14px}
+.b{font-size:14.5px;line-height:1.75;color:#666;font-weight:300}
+.big-quote{text-align:center;padding:135px 48px;position:relative;overflow:hidden}
+.big-quote::before{content:'VAV';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:'Bebas Neue',sans-serif;font-size:clamp(140px,30vw,420px);color:rgba(200,168,75,0.018);pointer-events:none}
+.big-quote p{max-width:840px;margin:0 auto;font-size:clamp(28px,4vw,58px);line-height:1.18;font-style:italic;color:var(--gold-b);position:relative;z-index:1}
+.closing{text-align:center;padding:130px 48px 110px}
+.closing h2{margin-bottom:30px}
+.btn{padding:15px 36px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:3px;text-transform:uppercase;display:inline-block;text-decoration:none;border:1px solid var(--gold-d);color:var(--gold);transition:all .25s}
+.btn:hover{border-color:var(--gold);color:var(--gold-b);transform:translateY(-2px)}
+footer{border-top:1px solid var(--gold-d);padding:26px 48px;display:flex;justify-content:space-between;gap:24px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:8.5px;letter-spacing:2px;color:var(--gold-d);text-transform:uppercase;line-height:2}
+.rv{opacity:0;transform:translateY(28px);transition:opacity .85s ease,transform .85s ease}
+.rv.vi{opacity:1;transform:translateY(0)}
+@media(max-width:900px){
+  .s{padding:76px 24px}
+  .grid,.cards{grid-template-columns:1fr}
+  .quote{position:relative;top:auto}
+  .big-quote{padding:90px 24px}
+  .closing{padding:90px 24px}
+  footer{flex-direction:column;text-align:center}
+  .nav{position:absolute}
+}
+@media(max-width:680px){
+  body::after{display:none}
+  .nav{background:rgba(4,4,4,.96);backdrop-filter:none;-webkit-backdrop-filter:none}
+  .s{padding:60px 20px}
+  .big-quote{padding:70px 20px}
+  .closing{padding:70px 20px 80px}
+  footer{padding:22px 20px}
+  .cards{gap:0}
+  .card{padding:32px 22px;min-height:auto}
+}
+</style>
+</head>
+<body>
+<a class="nav" href="../VAV_holding.html">← Volver a VAV</a>
+
+<section class="hero">
+  <div class="ghost">ORIGEN</div>
+  <div class="kicker rv">Founder's Story · VAV</div>
+  <h1 class="rv">SACRIFICIO.<br><em>SISTEMA.</em><br>LEGADO.</h1>
+  <p class="sub rv">VAV no nace como una empresa más. Nace como la respuesta a una pregunta: qué haces con todo el sacrificio que vino antes de ti.</p>
+  <div class="drop rv"></div>
+</section>
+
+<div class="strip"><div class="strip-in" aria-hidden="true">
+  <span class="si">TRABAJO · CAPITAL · TECNOLOGÍA · SISTEMAS · LEGADO</span><span class="si">·</span>
+  <span class="si">CONOCIMIENTO → ESTRUCTURA → CAPITAL → LIBERTAD</span><span class="si">·</span>
+  <span class="si">VAV — Vision Among Visioners</span><span class="si">·</span>
+  <span class="si">TRABAJO · CAPITAL · TECNOLOGÍA · SISTEMAS · LEGADO</span><span class="si">·</span>
+  <span class="si">CONOCIMIENTO → ESTRUCTURA → CAPITAL → LIBERTAD</span><span class="si">·</span>
+  <span class="si">VAV — Vision Among Visioners</span><span class="si">·</span>
+</div></div>
+
+<section class="s">
+  <div class="lbl rv">El origen</div>
+  <h2 class="rv">ANTES DE VAV<br>HABÍA UNA<br><em>FAMILIA.</em></h2>
+  <div class="grid">
+    <div class="body rv">
+      <p>Desde pequeño he sentido una necesidad casi obsesiva de entender cómo funcionan las cosas: las personas, el dinero, el cuerpo, la economía, los sistemas, la tecnología, la motivación, el poder, el rendimiento y la libertad.</p>
+      <p>No me bastaba con aceptar las cosas como venían dadas. Siempre he tenido la tendencia natural a observar, analizar, conectar ideas y hacerme preguntas incómodas: por qué unas personas avanzan y otras se estancan, por qué algunas familias construyen patrimonio y otras pasan décadas sobreviviendo, por qué el esfuerzo no siempre se convierte en libertad.</p>
+      <p>Me identificaron con altas capacidades en el colegio. Siempre fui el raro. El que no encajaba en el molde, el que se aburría en clase, el que hacía preguntas que no tocaban. El sistema educativo estándar no estaba diseñado para mí — y durante años eso fue más una carga que una ventaja.</p>
+      <p>Mi historia empieza en una familia obrera catalana. Una familia de trabajo, ahorro, prudencia y sacrificio. De no deberle nada a nadie. De medir el gasto. De hacer las cosas bien.</p>
+    </div>
+    <div class="rv">
+      <div class="quote">"Mis padres aprendieron a sobrevivir trabajando. Yo tuve que aprender cómo funciona el capital."</div>
+      <div class="micro">BASE — Familia obrera catalana<br>PADRE — 60 años. Trabajador manual toda su vida<br>MADRE — Reflexiva. Lectora. Más introspectiva<br>MARC — Altas capacidades. Siempre fuera del molde<br>TESIS — Convertir sacrificio en legado</div>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section class="s">
+  <div class="lbl rv">La inversión invisible</div>
+  <h2 class="rv">EL CAPITAL<br>EMPEZÓ COMO<br><em>EDUCACIÓN.</em></h2>
+  <div class="grid">
+    <div class="body rv">
+      <p>Mis padres no vienen de círculos de élite, ni de cultura financiera, ni de familias donde se hablara de inversión, patrimonio, fiscalidad, estructuras empresariales o asignación de capital. Vienen del trabajo. De ganarse cada euro. De construir estabilidad desde abajo. De avanzar sin atajos.</p>
+      <p>Mi padre tiene 60 años. Toda su vida trabajando con las manos, con el cuerpo, con el tiempo. El dinero para él nunca fue una cifra en una pantalla — era horas. Era madrugar. Era cansancio acumulado. Era años de esfuerzo comprimidos en una cuenta corriente que había que proteger a cualquier precio.</p>
+      <p>Mi madre es diferente. Más reflexiva. Lectora. Con más tendencia a la introspección que a la confrontación. Donde mi padre reaccionaba con instinto de protección, ella procesaba con calma. Esa diferencia también formó parte de mi educación emocional.</p>
+    </div>
+    <div class="body rv">
+      <p>Durante años, esa fue la base sobre la que crecí. Una casa donde quizá no había cultura de capital, pero sí había algo mucho más importante: valores, disciplina, amor, sacrificio, responsabilidad y la voluntad de darme oportunidades que mis padres no habían tenido.</p>
+      <p>Mis padres invirtieron en mí mucho antes de que yo entendiera qué significaba invertir. Invirtieron en mi educación, en mi estabilidad, en mis posibilidades, en mi tiempo para aprender, en mis errores y en mi futuro.</p>
+      <p>Para mí, en cambio, el dinero empezó a convertirse en otra cosa: un sistema, un lenguaje, un juego de números, una expresión de información, riesgo, incentivos, ciclos, probabilidades y decisiones. <strong>Ahí nació el primer gran choque: él veía el dinero como sudor; yo empezaba a verlo como sistema.</strong></p>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section class="s">
+  <div class="lbl rv">Cambio de era</div>
+  <h2 class="rv">AHORRAR<br>YA NO<br><em>BASTA.</em></h2>
+  <div class="grid">
+    <div class="body rv">
+      <p>Mis padres venían de una generación donde ahorrar era la máxima virtud. Si trabajabas, gastabas menos de lo que ingresabas y guardabas dinero, estabas haciendo las cosas bien. Y durante mucho tiempo, ese modelo funcionó. El ahorro era seguridad. La prudencia era protección. El banco era confianza.</p>
+      <p>Pero el mundo cambió. Llegó una época en la que tener dinero parado también se convirtió en una forma de riesgo. La inflación podía comerse años de sacrificio sin hacer ruido. El poder adquisitivo desaparece lentamente, sin notificaciones, sin facturas, sin titulares personales.</p>
+      <p><strong>La inflación también roba. Solo que no llama a la puerta.</strong></p>
+    </div>
+    <div class="body rv">
+      <p>Con 18 o 19 años empecé a invertir, a hacer trading y a moverme por mercados, criptomonedas y activos digitales. Mientras seguía estudiando, llegué a generar entre €2.000 y €2.500 al mes. Para mi edad, era una cantidad fuera de lo normal.</p>
+      <p>Desde fuera, seguramente parecía un crío jugando con fuego. Y en parte lo era. Mi padre no lo entendía — y lo entiendo. No era el lenguaje que él conocía. Para alguien que había construido cada euro con trabajo físico, ver a su hijo de 18 años moviéndose por pantallas y hablando de mercados era difícil de procesar como algo serio.</p>
+      <p>Pero también estaba desarrollando algo que no se enseña en un aula: intuición de mercado, tolerancia al riesgo, pensamiento probabilístico y una relación directa con la volatilidad.</p>
+    </div>
+  </div>
+</section>
+
+<section class="big-quote">
+  <p>"El problema no era invertir. El problema era invertir mal."</p>
+</section>
+
+<hr>
+<section class="s">
+  <div class="lbl rv">La hostia necesaria</div>
+  <h2 class="rv">MERCADO,<br>ERROR Y<br><em>BARRO.</em></h2>
+  <div class="grid">
+    <div class="body rv">
+      <p>En aquella época les dije a mis padres que no podían dejar que la inflación se comiera sus ahorros. Pero hicieron lo lógico: confiaron más en el banco que en su hijo de 18 años. Y lo entiendo. Yo también habría desconfiado de mí.</p>
+      <p>El problema es que muchas veces lo que se presenta como seguro no es realmente seguro. Es simplemente familiar. Tiene una oficina, una marca conocida, una persona con traje hablando con seguridad y un lenguaje técnico diseñado para sonar tranquilo.</p>
+      <p>Pero debajo puede haber letra pequeña, comisiones, productos opacos, riesgos mal explicados y decisiones que no están realmente alineadas con tus intereses.</p>
+    </div>
+    <div class="body rv">
+      <p>Mientras eso pasaba, yo tampoco estaba viviendo una línea recta ascendente. Gané dinero, perdí dinero, me equivoqué, me creí más preparado de lo que estaba, viví euforia y viví caídas. Vi cómo los mercados podían recompensarte y humillarte con la misma velocidad.</p>
+      <p>Más tarde también entendí otra parte del juego: trabajar por dinero desde el cuerpo, desde el tiempo y desde el cansancio. Me tocó bajar al barro. Trabajar como cualquier persona normal. Incluso trabajar en la fruta.</p>
+      <p><strong>Una cosa es mover números en una pantalla. Otra es entender lo que cuesta ganar dinero cuando sale de tus horas, de tu energía y de tu cuerpo.</strong></p>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section class="s">
+  <div class="lbl rv">El coste del sistema bancario</div>
+  <h2 class="rv">EL BANCO<br>LES ESTABA<br><em>COSTANDO DINERO.</em></h2>
+  <div class="grid">
+    <div class="body rv">
+      <p>Mientras yo aprendía a golpes en los mercados, mis padres seguían donde siempre: con el banco de toda la vida. Lo que nadie les explicó bien fue el mecanismo real detrás de los productos que tenían contratados.</p>
+      <p>Fondos de gestión activa con comisiones que se comían la rentabilidad. Productos estructurados donde parte de la remuneración se pagaba en acciones del propio banco — acciones infravaloradas, con liquidez limitada, cuyo valor real nadie discutía en la reunión. Cláusulas enterradas en documentación que ningún cliente normal lee. Complejidad disfrazada de seguridad.</p>
+      <p>No lo vivían como una pérdida. Lo vivían como normalidad. El banco era de confianza. El gestor era amable. Los extractos llegaban puntual. Pero los números, año tras año, no cuadraban. El capital que habían construido con décadas de trabajo se estaba erosionando lentamente. Sin drama. Sin titular. Sin que nadie les avisara.</p>
+    </div>
+    <div class="rv">
+      <div class="quote">"Lo que se presenta como seguro no siempre lo es. A veces simplemente es familiar."</div>
+      <div class="micro">PERÍODO — Años previos a 2021<br>MECANISMO — Acciones propias infravaloradas + comisiones ocultas<br>EFECTO — Rentabilidad negativa real<br>PERCEPCIÓN — "Todo está bien, el banco es de confianza"<br>REALIDAD — Erosión silenciosa del capital</div>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section class="s">
+  <div class="lbl rv">Responsabilidad</div>
+  <h2 class="rv">EN 2023<br>ME DEJARON<br><em>AYUDAR.</em></h2>
+  <div class="grid">
+    <div class="body rv">
+      <p>En 2021 revisé los números por primera vez de forma seria. Los resultados eran malos — no catastróficos, pero malos. Lo suficiente para que cualquier persona con criterio financiero levantara la mano. Intenté hablar. Mi padre no lo escuchó. No era el momento, o no era la persona, o no era la forma. El banco seguía siendo el banco.</p>
+      <p>En 2023 ya no pude quedarme callado. Los números seguían sin cuadrar y el tiempo que pasaba era capital que se perdía. Esta vez no pregunté — mostré. Le senté delante de los datos: los productos que tenían, las comisiones reales que pagaban, la rentabilidad ajustada a inflación, la comparativa con alternativas simples y conservadoras.</p>
+      <p>Ahí empecé a entender mejor a mi padre. Su resistencia no era ignorancia. Era memoria. Era prudencia nacida del sacrificio. Era el instinto de proteger algo que le había costado una vida construir.</p>
+    </div>
+    <div class="body rv">
+      <p>También entendí algo más profundo: saber técnicamente más que alguien no te da automáticamente derecho a liderarlo. Para que alguien confíe en ti con su patrimonio, no basta con tener razón. Tienes que saber traducir tu mundo al suyo.</p>
+      <p>Les propuse cambios concretos. Sin criptomonedas. Sin plataformas extrañas. Sin complejidad innecesaria. Dentro de lo que podían entender, tolerar y sostener emocionalmente. Aceptaron parte. Y funcionó.</p>
+      <p>Entre 2023 y 2026, el capital que gestioné con ellos generó un retorno aproximado del 120%. Pasaron de perder poder adquisitivo en silencio a ver sus ahorros trabajar a su favor por primera vez en años.</p>
+      <p>Al vender parte de las posiciones en 2025-2026, llegó un choque que no esperaban: la factura fiscal. Mi padre pensaba que las comisiones de gestión que había pagado durante años equivalían a impuestos ya liquidados. No funcionaba así. Ese momento también fue parte de la educación — para los dos. <strong>No gané su confianza teniendo razón. La gané demostrando que entendía su mundo, no solo el mío.</strong></p>
+    </div>
+  </div>
+</section>
+
+<hr>
+<section class="s">
+  <div class="lbl rv">La tesis</div>
+  <h2 class="rv">DE ESFUERZO<br>A PROPIEDAD.<br><em>DE PROPIEDAD<br>A LIBERTAD.</em></h2>
+  <div class="body rv" style="max-width:820px;">
+    <p>Mis padres habían construido una base con trabajo, ahorro y sacrificio. Habían hecho lo más difícil: venir de abajo y crear estabilidad. Darme oportunidades. Comprarme tiempo. Permitirme pensar, estudiar, equivocarme y aprender.</p>
+    <p>Pero para pasar de estabilidad a patrimonio, de patrimonio a libertad, y de libertad a legado, ya no basta solo con trabajar y ahorrar. Hace falta entender capital. Hace falta entender riesgo. Hace falta entender fiscalidad. Hace falta entender tecnología. Hace falta entender comportamiento humano. Hace falta entender sistemas.</p>
+    <p>Ahí empezó a conectarse todo: mi pasión por la economía, mi obsesión por la psicología, mi interés por el rendimiento físico y metabólico, mi relación con la tecnología, mi incomodidad crónica con la educación tradicional — esa misma que siempre me fue pequeña — y mi necesidad de construir algo que tuviera sentido más allá del mes a mes.</p>
+  </div>
+  <div class="cards rv">
+    <div class="card"><div class="n">01</div><div class="t">TRABAJO</div><div class="b">Construye la base: disciplina, estabilidad, ahorro, prudencia y respeto por el esfuerzo acumulado.</div></div>
+    <div class="card"><div class="n">02</div><div class="t">CAPITAL</div><div class="b">Convierte la base en propiedad: asignación, riesgo, fiscalidad, ciclos y decisiones con criterio.</div></div>
+    <div class="card"><div class="n">03</div><div class="t">SISTEMAS</div><div class="b">Escalan la capacidad: tecnología, IA, procesos, memoria, automatización y ejecución acumulativa.</div></div>
+  </div>
+</section>
+
+<hr>
+<section class="s">
+  <div class="lbl rv">VAV / VORTEX</div>
+  <h2 class="rv">LA VISIÓN<br>NECESITABA<br><em>ARQUITECTURA.</em></h2>
+  <div class="grid">
+    <div class="body rv">
+      <p>VAV nace como la estructura que une todas esas obsesiones en una tesis de largo plazo: transformar conocimiento en estructura, estructura en capital y capital en libertad.</p>
+      <p>VAV es un holding diseñado para construir, adquirir y operar empresas bajo una lógica común: crear activos reales, utilizar tecnología como apalancamiento y construir propiedad a largo plazo.</p>
+      <p><strong>VAV es la consecuencia natural de mi historia: sacrificio, educación, capital, tecnología y legado puestos dentro de una misma arquitectura.</strong></p>
+    </div>
+    <div class="body rv">
+      <p>Pero una visión sin sistema no escala. Por eso existe VORTEX.</p>
+      <p>VORTEX es el sistema operativo de inteligencia artificial que potencia la ejecución de VAV: una arquitectura personal y empresarial diseñada para pensar, analizar, decidir, crear, operar y mejorar continuamente.</p>
+      <p>VORTEX convierte caos en claridad, claridad en estrategia, estrategia en ejecución, ejecución en datos, datos en aprendizaje y aprendizaje en ventaja.</p>
+    </div>
+  </div>
+</section>
+
+<section class="big-quote">
+  <p>"VAV es la visión. VORTEX es el motor. Las empresas operativas son la ejecución."</p>
+</section>
+
+<hr>
+<section class="s">
+  <div class="lbl rv">El porqué</div>
+  <h2 class="rv">NO ES<br>APARIENCIA.<br><em>ES LEGADO.</em></h2>
+  <div class="body rv" style="max-width:850px;">
+    <p>No me interesa construir por apariencia. No me interesa emprender por moda. No me interesa vender humo. No me interesa parecer exitoso.</p>
+    <p>Me interesa construir estructuras que sobrevivan al entusiasmo inicial. Empresas que puedan operar. Sistemas que puedan mejorar. Activos que puedan crecer. Conocimiento que pueda convertirse en capital. Capital que pueda convertirse en libertad. Libertad que pueda convertirse en legado.</p>
+    <p>Mi visión no nace del deseo superficial de "ser rico". Nace de una pregunta mucho más profunda: <strong>qué haces con todo el sacrificio que vino antes de ti.</strong></p>
+    <p>Mis padres me enseñaron el valor del trabajo. El mercado me enseñó el valor del riesgo. La vida me enseñó el valor de la humildad. La tecnología me enseñó el valor del apalancamiento. La educación me enseñó el valor del conocimiento. Y mis errores me enseñaron que la inteligencia sin estructura no basta.</p>
+    <p><strong>VAV es mi respuesta.</strong></p>
+  </div>
+</section>
+
+<hr>
+<section class="closing">
+  <div class="lbl rv" style="justify-content:center;">Conclusión</div>
+  <h2 class="rv">MIS PADRES<br>CONSTRUYERON<br><em>LA BASE.</em></h2>
+  <p class="sub rv" style="margin:0 auto 42px;">Mi responsabilidad es intentar pegar el salto. No desde el desprecio al origen, sino desde la responsabilidad hacia él.</p>
+  <div class="body rv" style="max-width:780px;margin:0 auto 48px;">
+    <p>No para negar la clase obrera de la que vengo, sino para demostrar hasta dónde puede llegar cuando se combina con conocimiento, capital, tecnología y sistemas.</p>
+    <p><strong>El mayor retorno de la inversión de mis padres no fue una acción. Fui yo.</strong></p>
+    <p>Y VAV es mi forma de demostrar que esa inversión valió la pena.</p>
+  </div>
+  <a class="btn rv" href="../VAV_holding.html">Volver al holding</a>
+</section>
+
+<footer>
+  <div>VAV — Vision Among Visioners</div>
+  <div>Founder's Story · Marc Vidalmorgó · Lleida 2026</div>
+</footer>
+
+<script>
+const els = document.querySelectorAll('.rv');
+// Fallback: si IntersectionObserver no dispara en 400ms, mostrar todo
+const fallback = setTimeout(() => {
+  els.forEach(el => el.classList.add('vi'));
+}, 400);
+
+if ('IntersectionObserver' in window) {
+  const ob = new IntersectionObserver((entries) => {
+    entries.forEach((e, i) => {
+      if (e.isIntersecting) {
+        clearTimeout(fallback);
+        setTimeout(() => e.target.classList.add('vi'), i * 60);
+        ob.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.01 });
+  els.forEach(el => ob.observe(el));
+} else {
+  els.forEach(el => el.classList.add('vi'));
+}
+</script>
+</body>
+</html>
